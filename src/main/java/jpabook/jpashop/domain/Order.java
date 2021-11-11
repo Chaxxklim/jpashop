@@ -11,7 +11,7 @@ public class Order {
     private Long id;
     @Column(name = "MEMBER_ID")
     private Long memberId;
-    private LocalDateTime orderDate;
+    private LocalDateTime orderDate; // default = orderdate 지만 Override가능
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
